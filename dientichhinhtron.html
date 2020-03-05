@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dientichhinhtron</title>
+    <script>
+       function start() {
+           let bankinh = document.getElementById('bankinh').value;
+           let pi=3.14;
+           let dientich=(bankinh*bankinh)*pi;
+           let chuvi=bankinh*2*pi
+           document.getElementById('chuvi').value=chuvi;
+           document.getElementById('dientich').value=dientich;
+
+       }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>Chu Vi Hình Tròn</h1></legend>
+            <p>nhập bán kinhs</p><input type="text" name="chu vi " id="bankinh">
+            <input type="button" value="tính" onclick="start()">
+            <p>chu vi :</p> <input type="text" name="chuvi" id="chuvi">
+            <p>diện tích :</p><input type="text" name="diện tích" id="dientich">
+        </fieldset>
+    </form>
+
+</body>
+</html>

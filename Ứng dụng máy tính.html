@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+
+</head>
+<body>
+<input type="text" id="x" name="numberone">
+<input type="text" id="y" name="numbertwo">
+<input name="phép nhân" type="button" onclick="calculator(this.value)" value="*">
+<input name="phép chia" type="button" onclick="calculator(this.value)" value="/">
+<input name="phép cộng" type="button" onclick="calculator(this.value)" value="+">
+<input name="phép trừ"  type="button" onclick="calculator(this.value)" value="-">
+<input type="text" id="result" name="result">
+<script>
+    const SUB = '-';
+    const MUL = '*';
+    const DIVI ='/';
+    const SUM  ='+';
+    function calculator(operator) {
+        let x=parseInt(document.getElementById("x").value);
+        let y=parseInt(document.getElementById("y").value);
+        let result=0;
+        switch (operator) {
+            case MUL :
+                result = x *y;
+                break;
+            case DIVI:
+                result = x /y;
+                break;
+            case SUM:
+                result = x+ y;
+                break;
+            case SUB:
+                result = x -y;
+                break;
+        }
+        document.getElementById("result").value = result;
+    }
+</script>
+</body>
+</html>

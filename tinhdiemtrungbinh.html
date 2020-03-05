@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function start() {
+            let x= document.getElementById('math').value;
+            let y= document.getElementById('sci').value;
+            let z= document.getElementById('phy').value;
+            let tb=(parseInt(x)+parseInt(y)+parseInt(z))/3;
+            document.getElementById('avr').value=tb;
+        }
+
+    </script>
+</head>
+<body>
+
+<p>nhập điểm toán :</p> <input type="text" name="math" id="math" >
+<p>nhập điểm hoá :</p> <input type="text" name="sci" id="sci" >
+<p>nhập điểm lý :</p> <input type="text" name="phy" id="phy" >
+<input type="button" id="start" onclick="start()">
+<p>điểm trung bình :</p> <input type="text" name="avr" id="avr" >
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển tiền tệ </title>
+    <script>
+        function start() {
+            let a=document.getElementById('input').value;
+            let b=document.getElementById('khung1').value;
+            let c=document.getElementById('khung2').value;
+            let ketqua=(a*c)/b;
+            document.getElementById('result').value=ketqua;
+
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="input" name="input">
+
+<select id="khung1">
+    <option id="vn" name="tiền viêt" value="23000">việt nam</option>
+    <option id="USD" name="dolla" value="1">USD</option>
+    <option name="đài loan" value="29.85">đài loan</option>
+    <option name="úc " value="1.51" >úc</option>
+
+
+</select>
+<select id="khung2">
+    <option id="vn" name="tiền viêt" value="23000">việt nam</option>
+    <option id="USD" name="dolla" value="1">USD</option>
+    <option name="đài loan" value="29.85">đài loan</option>
+    <option name="úc " value="1.51" >úc</option>
+</select>
+<input type="button" onclick="start()" name="start" value="chuyển tiền tệ ">
+<input type="text" name="result" id="result">
+</body>
+</html>
